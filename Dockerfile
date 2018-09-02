@@ -29,4 +29,4 @@ RUN ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 EXPOSE 8080
 
-CMD java -jar -Dspring.profiles.active=production /var/local/sample-aws-codepipeline/target/sample-aws-codepipeline-1.0.0-SNAPSHOT.jar
+CMD java -jar -Dspring.profiles.active=production /var/local/sample-aws-codepipeline/target/sample-aws-codepipeline-0.0.1-SNAPSHOT.jar
