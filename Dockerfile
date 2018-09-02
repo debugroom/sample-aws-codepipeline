@@ -13,7 +13,7 @@ RUN sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
 RUN yum install -y apache-maven
 ENV JAVA_HOME /etc/alternatives/jre
 RUN git clone https://github.com/debugroom/sample-aws-codepipeline.git /var/local/sample-aws-codepipeline
-RUN mvn install -f /var/local/sample-aws-pipeline/pom.xml
+RUN mvn install -f /var/local/sample-aws-codepipeline/pom.xml
 
 RUN rm -f /etc/rpm/macros.image-language-conf && \
     sed -i '/^override_install_langs=/d' /etc/yum.conf && \
@@ -29,4 +29,4 @@ RUN ln -sf  /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 EXPOSE 8080
 
-CMD java -jar -Dspring.profiles.active=production /var/local/sample-aws-pipeline/target/sample-aws-pipeline-1.0.0-SNAPSHOT.jar
+CMD java -jar -Dspring.profiles.active=production /var/local/sample-aws-codepipeline/target/sample-aws-codepipeline-1.0.0-SNAPSHOT.jar
