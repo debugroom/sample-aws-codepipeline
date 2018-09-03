@@ -4,9 +4,9 @@ DELETE FROM EMAIL;
 DELETE FROM GRP;
 DELETE FROM USR;
 
-INSERT INTO USR VALUES ('00000000', '(ΦωΦ)', 'org.debugroom.test1', 0, '2015-01-01 00:00:00.0');
-INSERT INTO USR VALUES ('00000001', '(・∀・)', 'org.debugroom.test2', 0, '2015-01-01 00:00:00.0');
-INSERT INTO USR VALUES ('00000002', '(・ω・`)', 'org.debugroom.test3', 0, '2015-01-01 00:00:00.0');
+INSERT INTO USR VALUES ('00000000', '(ΦωΦ)ふふふ', 'org.debugroom.test1', 0, '2015-01-01 00:00:00.0');
+INSERT INTO USR VALUES ('00000001', '(・∀・)ふふふ', 'org.debugroom.test2', 0, '2015-01-01 00:00:00.0');
+INSERT INTO USR VALUES ('00000002', '(・ω・`)ふふふ', 'org.debugroom.test3', 0, '2015-01-01 00:00:00.0');
 
 INSERT INTO GRP VALUES ('0000000000', 'org.debugroom', 0, '2015-01-01 00:00:00.0');
 INSERT INTO GRP VALUES ('0000000001', 'nttdata', 0, '2015-01-01 00:00:00.0');
